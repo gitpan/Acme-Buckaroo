@@ -14,6 +14,14 @@ package Acme::Buckaroo;
 #
 # NOTE: For Module Comments, see bottom of this file for POD documentation.
 #
+# Version Information:
+#
+# 1.01  Kevin J. Rice  June 11th, 2002
+#       Submitted to CPAN.
+# 1.02  Kevin J. Rice  June 13th, 2002
+#       Fixed "bug" in POD documentation, in response to bug #741 in the
+#       cpan but tracking database (see http://rt.cpan.org)
+#
 ###############################################################################
 
 use 5.006;
@@ -26,7 +34,7 @@ our @ISA = qw(Exporter);
 our %EXPORT_TAGS = ( 'all' => [ ] );
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 our @EXPORT = ();
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 ###############################################################################
 # IF YOU WANT TO TURN ON DEBUG MODE
@@ -423,10 +431,19 @@ maintenance possible and even quite easy.
 I'd like to dedicate this module to Mr. Damian Conway, who has bettered
 Perl and the lives of those in the Perl-using community by vast amounts,
 and continues to do good work.  Someday I'd like to buy him a beer.
-Good book, dude! (OO PERL, O'Reilly).
+Good book, dude!
 
+The book, by the way, is "Object Oriented Perl", by Damian Conway
+and Randall L. Schwartz, published by Manning Publications Company;
+ISBN: 1884777791; (August 1999).
 
-=head2 EXPORT
+Also thanks to Jesse who reported a bug in this documentation
+and introduced me to the CPAN bug tracking database, available
+to everyone to report bugs in CPAN modules or scripts.  The address
+for this is http://rt.cpan.org. If you know of a bug in a CPAN module,
+report it there!
+
+=head1 EXPORT
 
 None by default.
 
